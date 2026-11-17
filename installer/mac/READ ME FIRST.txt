@@ -1,0 +1,9 @@
+INSTALLING PAISLEY ON A MAC
+
+1. Right-click (or Ctrl-click) "Install Paisley.pkg" and choose Open.
+   (Paisley isn't notarised by Apple yet, so a plain double-click shows a warning.
+    If there's no Open button: System Preferences > Security & Privacy > General > "Open Anyway".)
+2. Click through the installer.
+3. Restart your DAW. Paisley is under Instruments (Logic: AU Instruments > Paisley Audio).
+
+Works on macOS 10.13 or newer, Intel and Apple Silicon.

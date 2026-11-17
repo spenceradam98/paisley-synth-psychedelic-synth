@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="2">
+    <title>Paisley @VERSION@</title>
+    <welcome file="welcome.txt"/>
+    <options customize="allow" require-scripts="false" hostArchitectures="x86_64,arm64"/>
+    <domains enable_localSystem="true"/>
+    <volume-check><allowed-os-versions><os-version min="10.13"/></allowed-os-versions></volume-check>
+    <choices-outline>
+        <line choice="vst3"/>
+        <line choice="au"/>
+        <line choice="app"/>
+    </choices-outline>
+    <choice id="vst3" title="VST3 plug-in" description="For Ableton Live, Reaper, Bitwig, Cubase, FL Studio, Studio One…">
+        <pkg-ref id="com.paisleyaudio.paisley.vst3"/>
+    </choice>
+    <choice id="au" title="Audio Unit plug-in" description="For Logic Pro and GarageBand.">
+        <pkg-ref id="com.paisleyaudio.paisley.au"/>
+    </choice>
+    <choice id="app" title="Standalone app" description="Play Paisley without a DAW.">
+        <pkg-ref id="com.paisleyaudio.paisley.app"/>
+    </choice>
+    <pkg-ref id="com.paisleyaudio.paisley.vst3">vst3.pkg</pkg-ref>
+    <pkg-ref id="com.paisleyaudio.paisley.au">au.pkg</pkg-ref>
+    <pkg-ref id="com.paisleyaudio.paisley.app">app.pkg</pkg-ref>
+</installer-gui-script>

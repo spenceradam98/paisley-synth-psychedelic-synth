@@ -1,0 +1,8 @@
+Paisley - psychedelic synthesiser
+
+This installs:
+  • Paisley VST3 plug-in  (/Library/Audio/Plug-Ins/VST3)
+  • Paisley Audio Unit    (/Library/Audio/Plug-Ins/Components)
+  • Paisley standalone app (/Applications)
+
+Restart your DAW afterwards so it finds the new plug-in.
