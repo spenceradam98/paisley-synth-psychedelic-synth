@@ -10,6 +10,10 @@ on:
 env:
   VERSION: 0.1.0
 
+concurrency:
+  group: build-${{ github.sha }}
+  cancel-in-progress: true
+
 jobs:
   macos:
     runs-on: macos-15
